@@ -9,8 +9,8 @@
  * @LastEditors: xjw
  * @LastEditTime: 2021-05-29 17:05:48
  */
-#ifndef __TS02N_KEY_H__
-#define __TS02N_KEY_H__
+#ifndef __TUYA_TS02N_KEY_H__
+#define __TUYA_TS02N_KEY_H__
 
 #ifdef __cplusplus
     extern "C" {

@@ -32,17 +32,17 @@ $ git clone https://registry.code.tuya-inc.top/hardware_developer/tuya-iotos-emb
 ```
 ├── src	
 |    ├── app_driver
-|    |    └── ts02n_key.c            //按键驱动
-|    |    └── gpio_control.c            //按键指示灯配置相关
+|    |    └── tuya_ts02n_key.c            //按键驱动
+|    |    └── tuya_gpio_control.c            //按键指示灯配置相关
 |    ├── tuya_device.c             //应用层入口文件
-|    └── app_ts02n_key.c            //主要应用层
+|    └── tuya_app_ts02n_key.c            //主要应用层
 |
 ├── include				//头文件目录
 |    ├── app_driver_h
-|    |    └── ts02n_key.h            //按键驱动
-|    |    └── gpio_control.h            //按键指示灯配置相关
+|    |    └── tuya_ts02n_key.h            //按键驱动
+|    |    └── tuya_gpio_control.h            //按键指示灯配置相关
 |    ├── tuya_device.h
-|    └── app_ts02n_key.h
+|    └── tuya_app_ts02n_key.h
 |
 └── output              //编译产物
 ```

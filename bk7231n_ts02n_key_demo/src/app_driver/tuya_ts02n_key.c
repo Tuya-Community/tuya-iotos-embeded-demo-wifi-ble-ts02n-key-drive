@@ -10,7 +10,7 @@
  * @LastEditTime: 2021-05-29 16:35:04
  */
 /* Private includes ----------------------------------------------------------*/
-#include "ts02n_key.h"
+#include "tuya_ts02n_key.h"
 #include "uni_log.h"
 #include "uni_time_queue.h"
 #include "tuya_gpio.h"

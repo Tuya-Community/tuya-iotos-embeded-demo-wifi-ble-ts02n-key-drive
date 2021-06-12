@@ -10,8 +10,8 @@
  * @LastEditTime: 2021-05-29 16:50:14
  */
 
-#ifndef __APP_TS02N_KEY_H__
-#define __APP_TS02N_KEY_H__
+#ifndef __TUYA_APP_TS02N_KEY_H__
+#define __TUYA_APP_TS02N_KEY_H__
 
 #include "tuya_cloud_error_code.h"
 #include "tuya_cloud_com_defs.h"

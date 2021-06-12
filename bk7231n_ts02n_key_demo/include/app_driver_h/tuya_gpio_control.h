@@ -9,8 +9,8 @@
  * @LastEditors: xjw
  * @LastEditTime: 2021-05-29 17:05:48
  */
-#ifndef __GPIO_CONTROL_H__
-#define __GPIO_CONTROL_H__
+#ifndef __TUYA_GPIO_CONTROL_H__
+#define __TUYA_GPIO_CONTROL_H__
 
 #ifdef __cplusplus
     extern "C" {

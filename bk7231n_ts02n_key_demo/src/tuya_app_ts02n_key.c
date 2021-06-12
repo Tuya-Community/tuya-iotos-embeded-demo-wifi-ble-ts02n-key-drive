@@ -17,9 +17,9 @@
 #include "tuya_gpio.h"
 #include "uni_log.h"
 /* Private includes ----------------------------------------------------------*/
-#include "ts02n_key.h"
-#include "app_ts02n_key.h"
-#include "gpio_control.h"
+#include "tuya_ts02n_key.h"
+#include "tuya_app_ts02n_key.h"
+#include "tuya_gpio_control.h"
 
 /* Private function prototypes -----------------------------------------------*/
 void key1_cb_fun();
@@ -199,23 +199,20 @@ VOID app_report_all_dp_status(VOID)
         return;
     }
 
-    INT_T dp_cnt = 0;
-    dp_cnt = 1;
-
-    TY_OBJ_DP_S *dp_arr = (TY_OBJ_DP_S *)Malloc(dp_cnt*SIZEOF(TY_OBJ_DP_S));
+    TY_OBJ_DP_S *dp_arr = (TY_OBJ_DP_S *)Malloc(SIZEOF(TY_OBJ_DP_S));
     if(NULL == dp_arr) {
         PR_ERR("malloc failed");
         return;
     }
 
-    memset(dp_arr, 0, dp_cnt*SIZEOF(TY_OBJ_DP_S));
+    memset(dp_arr, 0, SIZEOF(TY_OBJ_DP_S));
 
     dp_arr[0].dpid = key_value_s.dp_id;
     dp_arr[0].type = PROP_ENUM;
     dp_arr[0].time_stamp = 0;
     dp_arr[0].value.dp_value = key_value_s.value;
 
-    op_ret = dev_report_dp_json_async(NULL,dp_arr,dp_cnt);
+    op_ret = dev_report_dp_json_async(NULL,dp_arr,1);
     Free(dp_arr);
     if(OPRT_OK != op_ret) {
         PR_ERR("dev_report_dp_json_async relay_config data error,err_num",op_ret);
@@ -240,15 +237,6 @@ VOID deal_dp_proc(IN CONST TY_OBJ_DP_S *root)
     dpid = root->dpid;
     PR_DEBUG("dpid:%d",dpid);
     
-    switch (dpid) {
-    
-    case 0:
-
-        break;
-    default:
-        break;
-    }
-
     app_report_all_dp_status();
 
     return;

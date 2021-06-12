@@ -33,17 +33,17 @@ This Demo is based on Tuya Smart Cloud Platform, Tuya Smart APP, IoTOS Embeded W
 ```
 ├── src	
 |    ├── app_driver
-|    |    └── ts02n_key.c            //Key drive
-|    |    └── gpio_control.c            //Key indicator light configuration
+|    |    └── tuya_ts02n_key.c            //Key drive
+|    |    └── tuya_gpio_control.c            //Key indicator light configuration
 |    ├── tuya_device.c             //application layer entry file
-|    └── app_ts02n_key.c           //primary application layer
+|    └── tuya_app_ts02n_key.c           //primary application layer
 |
 ├── include				//header directory
 |    ├── app_driver_h
-|    |    └── ts02n_key.h        
-|    |    └── gpio_control.h            
+|    |    └── tuya_ts02n_key.h        
+|    |    └── tuya_gpio_control.h            
 |    ├── tuya_device.h
-|    └── app_ts02n_key.h
+|    └── tuya_app_ts02n_key.h
 |
 └── output              //compile the product
 ```

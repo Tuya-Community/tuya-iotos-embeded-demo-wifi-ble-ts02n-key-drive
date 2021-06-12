@@ -9,7 +9,7 @@
  * @LastEditors: xjw
  * @LastEditTime: 2021-05-29 17:05:48
  */
-#include "gpio_control.h"
+#include "tuya_gpio_control.h"
 
 #define led1_pin 24
 #define led2_pin 26
